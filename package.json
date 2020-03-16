@@ -1,0 +1,19 @@
+{
+  "name": "event-sourced-dumbal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Floby/event-sourced-dumbal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Floby/event-sourced-dumbal/issues"
+  },
+  "homepage": "https://github.com/Floby/event-sourced-dumbal#readme"
+}
