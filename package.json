@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf dist && tsc",
+    "prepublish": "npm run build",
+    "test": "mocha --require ts-node/register test/**/*.test.ts",
+    "test:watch": "mocha --require ts-node/register test/**/*.test.ts --watch --watch-files test/**/*.ts src/**/*.ts"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,18 @@
   "bugs": {
     "url": "https://github.com/Floby/event-sourced-dumbal/issues"
   },
-  "homepage": "https://github.com/Floby/event-sourced-dumbal#readme"
+  "homepage": "https://github.com/Floby/event-sourced-dumbal#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "clone-deep": "^4.0.1",
+    "mocha": "^7.1.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/clone-deep": "^4.0.1",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.9.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.3"
+  }
 }
